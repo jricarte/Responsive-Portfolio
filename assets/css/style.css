@@ -384,3 +384,43 @@ input[type=submit] {
   border: 0 none;
 
 }
+@media screen and (max-width: 980px) {
+  .wrapper {
+    height: auto !important;
+    height: 50%;
+  
+    /* Box-model */
+    min-height: 50%;
+  
+    /* Positioning */
+    margin: 0 auto -100px;
+  }
+  .main-section {
+      float: left;
+      width: 100%;
+      max-width: 650px;
+    
+      /* Box-model */
+      padding: 30px;
+    
+      /* Positioning */
+      margin: 0 0 40px;
+      background: #fff;
+    
+      /* Visual */
+      border: 1px solid #ddd;
+
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 0px;
+
+}
+@media screen and (max-width: 640px) {
+  /* Can't seem to find the method to bring the masthead to a fixed position on top */
+  #masthead { 
+    position: fixed;
+    width: 100%
+}
